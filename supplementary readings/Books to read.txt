@@ -1,0 +1,10 @@
+Recommended books:
+
+1. [Grokking Deep Learning by Andrew Trask](https://classroom.udacity.com/nanodegrees/nd101/parts/09023a41-74e1-4df6-8404-5020a0c94369/modules/42cdd3bf-267c-4ad1-8c0c-0c3357569e8a/lessons/27585811-c026-40a0-afb4-b1b9ef03d97f/concepts/eb539882-9057-4c4f-ad33-5eb23837474f)
+
+discount code traskud17
+
+2. [Neural Networks And Deep Learning by Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
+
+3. [The Deep Learning Textbook](http://www.deeplearningbook.org/)
+

@@ -1,0 +1,3 @@
+CIFAR-10 dataset should be put here.
+
+In Notebook, the `download` option is set to True, so the download process should be done automatically after running the code cell.

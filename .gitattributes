@@ -1,5 +1,6 @@
 course_note/Course-Notebook.docx filter=lfs diff=lfs merge=lfs -text
 projects/2.[[:space:]]Dog-Breed[[:space:]]Classifier/dog_project/model_transfer.pt filter=lfs diff=lfs merge=lfs -text
+projects/2.[[:space:]]Dog-Breed[[:space:]]Classifier/submit/dog-project.zip filter=lfs diff=lfs merge=lfs -text
 projects/4.[[:space:]]Generate[[:space:]]TV[[:space:]]Scripts/project-tv-script-generation/save/*.pt filter=lfs diff=lfs merge=lfs -text
 projects/4.[[:space:]]Generate[[:space:]]TV[[:space:]]Scripts/project-tv-script-generation/*.pt filter=lfs diff=lfs merge=lfs -text
 projects/4.[[:space:]]Generate[[:space:]]TV[[:space:]]Scripts/submit/project-tv-script-generation.zip filter=lfs diff=lfs merge=lfs -text

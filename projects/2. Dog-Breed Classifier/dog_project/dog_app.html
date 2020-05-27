@@ -14031,7 +14031,7 @@ percentage of the images in &#39;dog_files_short&#39; have a detected dog face: 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>In my scratch CNN model, there are 4 convolutional layers, 2 kinds of dropout layers, 2 fully-connected layers. After each convolutional layer and FC layer, ReLU activation function is applied.</p>
+<p>In my scratch CNN model, there are 4 convolutional layers, 1 kind of dropout layers, 2 fully-connected layers. After each convolutional layer and FC layer, ReLU activation function is applied.</p>
 <p>In addition, dropout layer is applied to avoid overfitting after each convolutional layer and FC layer. MaxPooling layer will half-size the height and width after each convolutional layer.</p>
 <p>At the output layer, there are 133 neurons indicating 133 dog breeds.</p>
 
@@ -14961,7 +14961,7 @@ Test Accuracy: 66% (557/836)
         <span class="n">breed</span> <span class="o">=</span> <span class="n">predict_breed_transfer</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">breed</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorru, I could not recognize you...&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorry, I could not recognize you...&#39;</span><span class="p">)</span>
         <span class="n">show_image</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;But you look like a ...&#39;</span><span class="p">)</span>
         <span class="n">breed</span> <span class="o">=</span> <span class="n">predict_breed_transfer</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
@@ -14990,6 +14990,21 @@ Test Accuracy: 66% (557/836)
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> (Three possible points for improvement)</p>
+<ul>
+<li>Apply data augmentation to avoid overfitting</li>
+<li>Instead of replacing the last layer of ResNet-50, we may add additional layers to it.</li>
+<li>Tune the hyper-parameters so that the model achieves better performance</li>
+<li>Tune the model using different criterion, like Adam</li>
+</ul>
+<p><strong>A few my remaining questions:</strong></p>
+<ol>
+<li>Question 1:</li>
+</ol>
+<p>I found BatchNorm1d does better in generalization than dropout layer, I tried to increase dropout probability in the last fully-connected layer in my custom model, but it overfits. Once I change it to BatchNorm1d, it helped a lot. Currently I don't know why, but hopefully I can figure it out later on the lessons.</p>
+<ol>
+<li>Question 2:</li>
+</ol>
+<p>If we compute the loss of our model using <code>criterion</code>, why couldn't we optimize the weights using <code>criterion</code>. Instead we need to define another term <code>optimizer</code> to do the optimization task?</p>
 
 </div>
 </div>

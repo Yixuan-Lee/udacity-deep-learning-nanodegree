@@ -3,12 +3,12 @@
 
 # LICENCE to Udacity
 
-This repository contains materials which are owned and operated by Udacity and its licensors. Most of notebooks and images in course note are from Udacity. Papers, reference applications, supplementary readings, materials are referred or linked in Udacity's Deep Learning Nanodegree lectures. 
+This repository contains materials which are owned and operated by Udacity. Most of the notebooks, many images and links in course note are from Udacity. Papers, reference applications, supplementary readings, materials are referred or linked in Udacity's Deep Learning Nanodegree lectures. Please refer to [Udacity DLN official Github repository](https://github.com/udacity/deep-learning-v2-pytorch) for the recent updates.
 
 
 # Program Structure 
 
-The Deep Learning Nanodegree program is divided into five parts
+The Deep Learning Nanodegree program is divided into six parts:
 
 1. Introduction to Deep Learning
 2. Neural Networks
@@ -18,10 +18,9 @@ The Deep Learning Nanodegree program is divided into five parts
 6. Deploying a Model
 
 
-
 # GitHub LFS
 
-Many of files in this repository are large files which are larger than 50 MB. So I used `git lfs` to submit those files.
+Some files in this repository are large files which are larger than 50 MB. So I used `git lfs` to submit those files.
 
 How to upload large files using LFS:
 ```
@@ -46,5 +45,5 @@ LFS References :
 
 4. [Ignore tracking and Uploading large files](https://towardsdatascience.com/uploading-large-files-to-github-dbef518fa1a)
 
-
+5. [Removing files from Git Large File Storage](https://help.github.jp/enterprise/2.11/user/articles/removing-files-from-git-large-file-storage/)
 
